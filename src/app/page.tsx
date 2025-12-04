@@ -1,13 +1,27 @@
 "use client";
 
 import { Check, Users, Award, TrendingUp, Clock, Target, Shield, Zap, MessageCircle } from "lucide-react";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-black text-white">
+      {/* Header com Login */}
+      <header className="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-sm border-b border-gray-800">
+        <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+          <h1 className="text-2xl font-black text-sky-400">ProjetoFit30</h1>
+          <Link
+            href="/login"
+            className="bg-sky-500 hover:bg-sky-600 text-white px-6 py-2 rounded-full font-semibold transition-colors"
+          >
+            Área de Membros
+          </Link>
+        </div>
+      </header>
+
       {/* Hero Section */}
       <section
-        className="relative h-screen flex items-center justify-center bg-cover bg-center"
+        className="relative h-screen flex items-center justify-center bg-cover bg-center pt-20"
         style={{
           backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://k6hrqrxuu8obbfwn.public.blob.vercel-storage.com/temp/d6a216b8-b7f0-42f1-90cd-0d147c7fbd94.jpg)',
         }}
@@ -452,10 +466,6 @@ export default function Home() {
 
                 <div className="flex items-start gap-3">
                   <Check className="w-6 h-6 text-sky-400 flex-shrink-0 mt-1" />
-                  <p className="text-lg text-white">3 meses de 20% de desconto na consultoria online</p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <Check className="w-6 h-6 text-sky-400 flex-shrink-0 mt-1" />
                   <p className="text-lg text-white">Acompanhamento diário via WhatsApp</p>
                 </div>
                 <div className="flex items-start gap-3">
@@ -473,7 +483,7 @@ export default function Home() {
               </div>
 
               <a
-                href="https://wa.me/5511999999999?text=Olá%20Emerson,%20quero%20garantir%20minha%20vaga%20no%20ProjetoFit30!"
+                href="https://wa.me/5544998517802?text=Olá%20Emerson,%20quero%20garantir%20minha%20vaga%20no%20ProjetoFit30!"
                 className="block w-full bg-sky-500 hover:bg-sky-600 text-black text-2xl font-black py-6 rounded-xl text-center transition-all duration-300 hover:scale-105 shadow-2xl"
               >
                 QUERO COMEÇAR AGORA
